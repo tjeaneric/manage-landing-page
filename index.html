@@ -10,7 +10,7 @@
   <body>
     <!-- Header -->
     <header>
-      <nav class="relative container mx-auto p-6">
+      <nav class="container relative mx-auto p-6">
         <!-- Flex container -->
         <div class="flex items-center justify-between">
           <!-- Logo -->
@@ -18,7 +18,7 @@
             <img src="./img/logo.svg" alt="" srcset="" />
           </div>
           <!-- Menu items -->
-          <div class="hidden md:flex space-x-6 capitalize">
+          <div class="hidden space-x-6 capitalize md:flex">
             <a href="#" class="hover:text-darkGrayishBlue">pricing</a>
             <a href="#" class="hover:text-darkGrayishBlue">products</a>
             <a href="#" class="hover:text-darkGrayishBlue">about us</a>
@@ -28,12 +28,46 @@
           <!-- Button -->
           <a
             href="#"
-            class="hidden md:flex p-3 px-6 py-2 text-white bg-brightRed rounded-full hover:bg-brightRedLight"
+            class="hidden rounded-full bg-brightRed p-3 px-6 py-2 text-white hover:bg-brightRedLight md:block"
           >
             Get Started
           </a>
         </div>
       </nav>
     </header>
+    <main>
+      <!-- Hero section -->
+      <section id="hero">
+        <!-- Flex Container -->
+        <div
+          class="container mx-auto mt-10 flex flex-col-reverse items-center space-y-0 px-6 md:flex-row md:space-y-8"
+        >
+          <!-- Left Item -->
+          <div class="mb-32 flex flex-col space-y-12 md:w-1/2">
+            <h1
+              class="max-w-md text-center text-4xl font-bold md:text-left md:text-5xl"
+            >
+              Bring everyone together to build better products
+            </h1>
+            <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+              Manage makes it simple for software teams to plan day-to-day tasks
+              while keeping the larger team goals in view.
+            </p>
+            <div class="flex justify-center md:justify-start">
+              <a
+                href="#"
+                class="rounded-full bg-brightRed p-3 px-6 py-2 text-white hover:bg-brightRedLight"
+              >
+                Get Started
+              </a>
+            </div>
+          </div>
+          <!-- Right Item(Image) -->
+          <div class="md:w-1/2">
+            <img src="./img/illustration-intro.svg" alt="" srcset="" />
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

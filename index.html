@@ -32,6 +32,28 @@
           >
             Get Started
           </a>
+          <!-- Hamburger Icon -->
+          <button
+            id="menu-btn"
+            class="hamburger block focus:outline-none md:hidden"
+          >
+            <div class="span hamburger-top"></div>
+            <div class="span hamburger-middle"></div>
+            <div class="span hamburger-bottom"></div>
+          </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden">
+          <div
+            id="menu"
+            class="absolute left-6 right-6 mt-10 hidden flex-col items-center space-y-6 self-end bg-white py-8 font-bold drop-shadow-md sm:w-auto sm:self-center"
+          >
+            <a href="#" class="hover:text-darkGrayishBlue">pricing</a>
+            <a href="#" class="hover:text-darkGrayishBlue">products</a>
+            <a href="#" class="hover:text-darkGrayishBlue">about us</a>
+            <a href="#" class="hover:text-darkGrayishBlue">careers</a>
+            <a href="#" class="hover:text-darkGrayishBlue">community</a>
+          </div>
         </div>
       </nav>
     </header>
@@ -75,11 +97,11 @@
           class="container mx-auto mt-10 flex flex-col space-y-0 px-12 md:flex-row md:space-y-0"
         >
           <!-- What's different -->
-          <div class="flex flex-col space-y-12 md:w-1/2">
-            <h1 class="max-w-md text-center text-4xl font-bold md:text-left">
+          <div class="flex flex-col space-y-8 text-center md:w-1/2">
+            <h1 class="max-w-md text-4xl font-bold md:text-left">
               What's different about Manage?
             </h1>
-            <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+            <p class="max-w-sm text-darkGrayishBlue md:text-left">
               Manage provides all the functionality your team needs, without the
               complexity. Our software is tailor-made for modern digital product
               teams.
@@ -353,5 +375,6 @@
         </div>
       </footer>
     </main>
+    <script src="./js/index.js"></script>
   </body>
 </html>
